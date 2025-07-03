@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adventure - Aniflix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+
+    .anime-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .anime-item {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      width: 180px;
+      transition: transform 0.3s;
+    }
+
+    .anime-item:hover {
+      transform: scale(1.05);
+    }
+
+    .anime-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .anime-item p {
+      padding: 10px;
+      font-size: 1em;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Adventure Anime Section -->
+  <section class="category" id="adventure-section">
+    <h2>Adventure Anime</h2>
+    <div class="anime-grid">
+      <div class="anime-item">
+        <a href="one-piece.html">
+          <img src="https://i.pinimg.com/736x/be/ef/6f/beef6fdc70c5c549a5ad42a09b6fc36d.jpg" alt="One Piece">
+          <p>One Piece</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="hunter-x-hunter.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgospEej26LUhAAU6IcNrs7bAowIOU2FKsPg&s" alt="Hunter x Hunter">
+          <p>Hunter x Hunter</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="made-in-abyss.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjM4ODA5YTktNjliMC00NzI5LTk3ZTctZWYyYWEyNTJhMmQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Made in Abyss">
+          <p>Made in Abyss</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="naruto.html">
+          <img src="https://i.pinimg.com/736x/69/08/75/6908756e621da7668bbc3378f25e6f6a.jpg" alt="Naruto">
+          <p>Naruto</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="magi.html">
+          <img src="https://i.pinimg.com/474x/67/0b/33/670b33815e3901cfd456316101f1a37b.jpg" alt="Magi: The Labyrinth of Magic">
+          <p>Magi</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
