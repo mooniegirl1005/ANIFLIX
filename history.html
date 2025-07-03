@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniflix Watch History</title>
+  <style>
+    body {
+      background-color: #141414;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #095ae5bf;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .history-item {
+      background-color: #222;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      transition: background-color 0.3s;
+    }
+
+    .history-item:hover {
+      background-color: #333;
+    }
+
+    .history-item img {
+      width: 150px;
+      height: auto;
+    }
+
+    .details {
+      padding: 15px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .details h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .details p {
+      margin: 0;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .history-item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .history-item img {
+        width: 100%;
+      }
+
+      .details {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Aniflix</div>
+  </header>
+
+  <div class="container">
+    <h1>Watch History</h1>
+    <div class="history-list">
+      <div class="history-item">
+        <img src="https://m.media-amazon.com/images/I/41gP+S8QQXL.jpg" alt="Demon Slayer">
+        <div class="details">
+          <h3>Demon Slayer - Ep 12: The Boar Bares Its Fangs</h3>
+          <p>Watched on April 18, 2025</p>
+        </div>
+      </div>
+
+      <div class="history-item">
+        <img src="https://images-cdn.ubuy.co.id/63b6146ddecbee137603e92a-attack-on-titan-24-x-36-poster-by-movie.jpg" alt="Attack on Titan">
+        <div class="details">
+          <h3>Attack on Titan - Ep 5: First Battle</h3>
+          <p>Watched on April 17, 2025</p>
+        </div>
+      </div>
+
+      <div class="history-item">
+        <img src="https://i.pinimg.com/736x/be/ef/6f/beef6fdc70c5c549a5ad42a09b6fc36d.jpg" alt="One Piece">
+        <div class="details">
+          <h3>One Piece - Ep 1015: Straw Hat Luffy</h3>
+          <p>Watched on April 15, 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
