@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Browse All Animes</title>
+    <style>
+        /* General Body and Layout Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+        }
+
+        /* Container for Browse All Section */
+        .browse-all {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Browse All Heading */
+        .browse-all h2 {
+            color: #ff5722;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        /* Anime Grid Layout */
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        /* Anime Item Styling */
+        .anime-item {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .anime-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Anime Image */
+        .anime-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ff5722;
+            display: block; /* Prevent extra space below image */
+        }
+
+        /* Anime Title */
+        .anime-item p {
+            color: #fff;
+            text-align: center;
+            font-size: 1.1em;
+            padding: 10px;
+            background-color: #333;
+            margin: 0;
+        }
+
+        /* Link Styling */
+        .anime-item a {
+            display: block;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="browse-all">
+        <h2>Browse All Animes (A-Z)</h2>
+        <div class="anime-grid">
+            <div class="anime-item">
+                <a href="one-piece.html">
+                    <img src="https://i.pinimg.com/736x/be/ef/6f/beef6fdc70c5c549a5ad42a09b6fc36d.jpg" alt="One Piece">
+                    <p>One Piece</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="naruto.html">
+                    <img src="https://i.pinimg.com/736x/69/08/75/6908756e621da7668bbc3378f25e6f6a.jpg" alt="Naruto">
+                    <p>Naruto</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="demon-slayer.html">
+                    <img src="https://m.media-amazon.com/images/I/41gP+S8QQXL.jpg" alt="Demon Slayer">
+                    <p>Demon Slayer</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="attack-on-titan.html">
+                    <img src="https://images-cdn.ubuy.co.id/63b6146ddecbee137603e92a-attack-on-titan-24-x-36-poster-by-movie.jpg" alt="Attack on Titan">
+                    <p>Attack on Titan</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="jujutsu-kaisen.html">
+                    <img src="https://m.media-amazon.com/images/I/818DUzqnwES.jpg" alt="Jujutsu Kaisen">
+                    <p>Jujutsu Kaisen</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="fullmetal-alchemist.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDczZWMyMjEtZDI0ZS00YThjLWE2MjEtNTIxNmVmZDhkNDg5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Fullmetal Alchemist">
+                    <p>Fullmetal Alchemist</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="bleach.html">
+                    <img src="https://m.media-amazon.com/images/I/61tnqxXlGEL._AC_UF1000,1000_QL80_.jpg" alt="Bleach">
+                    <p>Bleach</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="death-note.html">
+                    <img src="https://i1.sndcdn.com/artworks-000122584634-65jwun-t1080x1080.jpg" alt="Death Note">
+                    <p>Death Note</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="sword-art-online.html">
+                    <img src="https://www.abystyle.com/3835247-large_default/sword-art-online-poster-aincrad-915x61cm.jpg" alt="Sword Art Online">
+                    <p>Sword Art Online</p>
+                </a>
+            </div>
+
+            <div class="anime-item">
+                <a href="tokyo-ghoul.html">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/regionalbooks/f/m/d/tokyo-ghoul-volume-1-manga-english-paperback-original-imagg7j2bg6zpbtj.jpeg?q=90&crop=false" alt="Tokyo Ghoul">
+                    <p>Tokyo Ghoul</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
