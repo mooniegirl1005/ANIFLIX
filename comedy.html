@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comedy - Aniflix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    .anime-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .anime-item {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      width: 180px;
+      transition: transform 0.3s;
+    }
+
+    .anime-item:hover {
+      transform: scale(1.05);
+    }
+
+    .anime-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .anime-item p {
+      padding: 10px;
+      font-size: 1em;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Comedy Anime Section -->
+  <section class="category" id="comedy-section">
+    <h2>Comedy Anime</h2>
+    <div class="anime-grid">
+      <div class="anime-item">
+        <a href="gintama.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BMjEyZjQ0MGUtZTlmOS00NTE4LTljM2ItZjM2MjRhOGQ5YTAzXkEyXkFqcGc@._V1_.jpg" alt="Gintama">
+          <p>Gintama</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="konosuba.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BYTRiM2VmNjgtZWY5ZS00YTIxLWJhMjAtY2UzYTk3NzM5ZTM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Konosuba">
+          <p>Konosuba</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="saiki-k.html">
+          <img src="https://image.tmdb.org/t/p/original/wZ4NtrkOapW0scpTcqUslVPzPkU.jpg" alt="Saiki K.">
+          <p>Saiki K.</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="ouran-highschool.html">
+          <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781421538709/ouran-high-school-host-club-vol-16-9781421538709_hr.jpg" alt="Ouran Host Club">
+          <p>Ouran Host Club</p>
+        </a>
+      </div>
+      <div class="anime-item">
+        <a href="nichijou.html">
+          <img src="https://m.media-amazon.com/images/I/71NwqiXXaHS.jpg" alt="Nichijou">
+          <p>Nichijou</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
