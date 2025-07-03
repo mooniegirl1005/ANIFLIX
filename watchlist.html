@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniflix Watchlist</title>
+  <style>
+    body {
+      background-color: #141414;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #095ae5bf;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .anime-card {
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+
+    .anime-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .anime-title {
+      padding: 10px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .anime-title {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Aniflix</div>
+  </header>
+
+  <div class="container">
+    <h1>Your Watchlist</h1>
+    <div class="grid">
+      <div class="anime-card">
+        <img src="https://m.media-amazon.com/images/I/41gP+S8QQXL.jpg" alt="Demon Slayer">
+        <div class="anime-title">Demon Slayer</div>
+      </div>
+      <div class="anime-card">
+        <img src="https://images-cdn.ubuy.co.id/63b6146ddecbee137603e92a-attack-on-titan-24-x-36-poster-by-movie.jpg" alt="Attack on Titan">
+        <div class="anime-title">Attack on Titan</div>
+      </div>
+      <div class="anime-card">
+        <img src="https://5.imimg.com/data5/ANDROID/Default/2022/12/WA/YQ/TK/15232517/product-jpeg-500x500.jpg" alt="Naruto">
+        <div class="anime-title">Naruto</div>
+      </div>
+      <div class="anime-card">
+        <img src="https://i.pinimg.com/736x/be/ef/6f/beef6fdc70c5c549a5ad42a09b6fc36d.jpg" alt="One Piece">
+        <div class="anime-title">One Piece</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
