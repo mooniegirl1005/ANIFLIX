@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch Profile - Aniflix</title>
+  <style>
+    body {
+      background-color: #141414;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    .profile-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .profile {
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .profile:hover {
+      transform: scale(1.1);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      border: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    .profile:hover .avatar {
+      border-color: #095ae5bf;
+    }
+
+    .name {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Who's watching?</h1>
+  <div class="profile-container">
+    <div class="profile">
+      <img src="https://cdn.wallpapersafari.com/89/1/ts4MhC.jpg" class="avatar" alt="Avatar 1">
+      <div class="name">Yosh</div>
+    </div>
+    <div class="profile">
+      <img src="https://t4.ftcdn.net/jpg/06/13/23/63/360_F_613236330_Rh9mH7gEbIDpopSuXYQ5XM6JeNf9JYQB.jpg" class="avatar" alt="Avatar 2">
+      <div class="name">Anya</div>
+    </div>
+    <div class="profile">
+      <img src="https://w0.peakpx.com/wallpaper/389/173/HD-wallpaper-frozen-movie-frozen-movie-elsa-frozen.jpg" class="avatar" alt="Avatar 3">
+      <div class="name">Jassi</div>
+    </div>
+    <div class="profile">
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/08/spy-x-family-anya-hugs-bond.jpg" class="avatar" alt="Avatar 4">
+      <div class="name">Boldman</div>
+    </div>
+  </div>
+</body>
+</html>
