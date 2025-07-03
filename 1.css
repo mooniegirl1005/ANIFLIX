@@ -1,0 +1,165 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 132, 255);
+}
+
+.signin-btn {
+  background-color: #095ae5bf;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.signin-btn:hover {
+  background-color: #095ae5bf;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://kitchener.citynews.ca/wp-content/blogs.dir/sites/3/2023/04/20230414000416-6438d3ef595c37fa5d019b9cjpeg.jpg') center center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero-text .subline {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Popular Section */
+.section {
+  padding: 2rem;
+  padding-top: 6rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.scroll-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.scroll-row img {
+  height: 200px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.scroll-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Sign In Section */
+.signin-section {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.signin-form {
+  background-color: #141414;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.signin-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.signin-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #095ae5bf;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin-form button:hover {
+  background-color:  #095ae5bf;
+}
+
+.small-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
